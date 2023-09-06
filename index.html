@@ -454,8 +454,39 @@
       width: 250px;
     }
   }
+  div.fixed{
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    height: max-content;
+  }
   footer{
     background-color:#12486b;
+    height: 200px;
+    box-shadow:-2px -1px 10px #0000008c;
+    text-align: center;
+  }
+  footer div{
+    
+    width: 150px;
+    display: inline-block;
+    background-color: transparent;
+    margin-top: 2%;
+    
+  }
+  footer div > p{
+    margin-block: 0%;
+    margin-top: 2%;
+    color: white;
+  }
+  footer div > p >img{
+    padding-bottom: -2px;
+  }
+  footer a{
+    color: white;
+  }
+  .redes{
+    text-decoration: underline;
   }
     </style>
 </head>
@@ -522,6 +553,8 @@
         </div>
     </div>
 
+    <div class="fixed"><a href="https://web.whatsapp.com/" target="_blank"><img src="whatsapp-.png" alt="Whatsapp"></a></div>
+
     <div class="enveloper2">
         <div class="container">
             <img class="image" src="familia.jpg" alt="Imagem" width="550px">
@@ -556,17 +589,23 @@
         <p>Breve descrição sobre a foto</p>
       </div>
     </div>
-    <div>
-      <img src="blusa 4.jpg" alt="Imagem 4">
-      <div class="image-description">
-        <h3>Blusa </h3>
-        <p>Breve descrição sobre a blusa 4. </p>
-      </div>
-    </div>
   </div>
 
   <footer>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eius nesciunt facilis voluptates maxime recusandae 
+    <div ><p>Se interessou?</p>
+      <P>Fale conosco!!</p>
+      <p>31 99999-9999</p>
+      </div>
+    <div ><p>LOGO</p></div>
+    <div ><p>Redes Sociais</p>
+    <a href="https://www.google.com/search?q=instagram&rlz=1C1PNFE_enBR1024BR1043&oq=instagram+&aqs=chrome..69i57j35i39i650j0i131i433i512l2j69i60l4.4359j0j4&sourceid=chrome&ie=UTF-8" target="_blank">
+      <p class="redes"><img src="instaaa.png" alt="instagram">Instagram</p>
+    </a>
+    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+      <p class="redes"><img src="facee.png" alt="Facebook">Facebook</p>
+    </a>
+  </div>
+   
   </footer>
     <script>
     // TAGBAR E CABEÇÁRIO
