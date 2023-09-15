@@ -149,7 +149,6 @@
             display: inline-block;
             align-items: center;
             justify-content: center;
-            text-shadow: -1px -1px 3px #00000091;
             font-size: 3em;
             font-family: 'Geologica', sans-serif;
             color: black;
@@ -439,6 +438,7 @@
   .image-description h3{
     text-align: center;
   }
+
   @media (max-width: 768px) {
     .image-container {
       flex-direction: column;
@@ -454,39 +454,63 @@
       width: 250px;
     }
   }
+
   div.fixed{
     position: fixed;
-    bottom: 200px;
+    bottom: 5%;
     right: 20px;
+    opacity: 0.65;
     height: max-content;
   }
+
   footer{
     background-color:#12486b;
-    height: 200px;
     box-shadow:-2px -1px 10px #0000008c;
     text-align: center;
+    display: flexbox;
   }
+
   footer div{
-    
     width: 150px;
     display: inline-block;
     background-color: transparent;
     margin-top: 2%;
-    
+    text-align: center;
   }
+
+  .divfooter{
+    width: 750px;
+  }
+
+  @media (max-width: 1000px) {
+    .divfooter{
+        width: 400px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .divfooter{
+        width: 250px;
+    }
+  }
+
   footer div > p{
     margin-block: 0%;
     margin-top: 2%;
     color: white;
   }
+
   footer div > p >img{
     padding-bottom: -2px;
   }
+
   footer a{
     color: white;
   }
+  
   .redes{
     text-decoration: underline;
+    
   }
     </style>
 </head>
@@ -592,21 +616,25 @@
   </div>
 
   <footer>
-    <div ><p>Se interessou?</p>
-      <P>Fale conosco!!</p>
-      <p>31 99999-9999</p>
-      </div>
-    <div ><p>LOGO</p></div>
-    <div ><p>Redes Sociais</p>
-    <a href="https://www.google.com/search?q=instagram&rlz=1C1PNFE_enBR1024BR1043&oq=instagram+&aqs=chrome..69i57j35i39i650j0i131i433i512l2j69i60l4.4359j0j4&sourceid=chrome&ie=UTF-8" target="_blank">
-      <p class="redes"><img src="instaaa.png" alt="instagram">Instagram</p>
-    </a>
-    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
-      <p class="redes"><img src="facee.png" alt="Facebook">Facebook</p>
-    </a>
-  </div>
-   
+    <div class="divfooter">
+        <div ><p>Se interessou?</p>
+        <P>Fale conosco!!</p>
+        <p>31 99999-9999</p>
+        </div>
+
+        <div ><p>LOGO</p></div>
+
+        <div ><p>Redes Sociais</p>
+            <a href="https://www.google.com/search?q=instagram&rlz=1C1PNFE_enBR1024BR1043&oq=instagram+&aqs=chrome..69i57j35i39i650j0i131i433i512l2j69i60l4.4359j0j4&sourceid=chrome&ie=UTF-8" target="_blank">
+            <p class="redes"><img src="instaaa.png" alt="instagram">Instagram</p>
+            </a>
+            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+            <p class="redes"><img src="facee.png" alt="Facebook">Facebook</p>
+            </a>
+        </div>
+    </div>
   </footer>
+
     <script>
     // TAGBAR E CABEÇÁRIO
         (function() {
